@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.startPage{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    height: 1300px;
+    display: none;
+}
+.startBtn{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -100px;
+    cursor: pointer;
+}
+.startBtn img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.wrapper{
+    width: 100%;
+    height: 1334px;;
+    position: relative;
+    background-image: url('image/bg.jpg');
+    background-size: 100% 100%;
+}
+.wrapper .left-side{
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+.wrapper .left-side img{
+    width: 90px;
+    height: 75px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+.wrapper .main{
+    left: 25%;
+    width: 50%;
+    height: 1334px;;
+    position: relative;
+}
+.wrapper .main .header{
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+.wrapper .main .header .score-box{
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+}
+.wrapper .main .header .score{
+    width: 50%;
+    height: 80px;
+    font-size: 30px;
+    font-weight: 500;
+    position: absolute;
+    left: 20%;
+    top: 0;
+}
+.wrapper .main .header .score #score{
+    display: inline-block;
+}
+.wrapper .main .contant{
+    width: 78%;
+    height: 420px;
+    position: relative;
+    left: 11%;
+    top: 420px;
+}
+.loser{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1300px;
+    z-index: 10005;
+    display: none;
+}
+.loser .con{
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -125px;
+    background-image: url('image/startP.jpg');
+    background-size:100% 100%;
+    border: 5px;
+    border-radius: 10px;
+}
+.loser .con .close{
+    float: right;
+}
+.loser .con .loserScore{
+    width: 23%;
+    height: 17%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -19%;
+    margin-top: -6%;
+    font-size: 30px;
+    text-align: center;
+}
+.food{
+    background-image: url('image/apple.png');
+    background-size: 100% 100%;
+}
+.snakehead{
+    background-image: url('image/head.png');
+    background-size: 100% 100%;
+}
+.snakebody{
+    background-image: url('image/body.png');
+    background-size: 100% 100%;
+}

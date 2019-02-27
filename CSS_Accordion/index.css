@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+width: 1050px;
+margin: 100px auto;
+}
+.content ul li{
+    position: relative;
+    overflow:hidden;
+    width: 200px;
+    height: 284px;
+    float: left;
+    list-style: none;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    /* 边框阴影    水平偏移量   虚化度*/
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.8);
+    /* all代表所有想改变的属性  2s代表改变效果在多长时间内完成 */
+    transition: all 2s;
+}
+.content ul:hover li{
+    width:120px;
+}
+.content ul li:hover{
+    width: 500px;
+}
+.content ul li a img{
+    width: 500px;
+    height: 100%;
+}
+.content ul li .title{
+   position: absolute;
+   bottom: 15px;
+   left: 0px;
+   width:100%;
+   height: 40px;
+   line-height: 40px;
+   background-color: rgba(0, 0, 0, 0.3);
+   text-indent: 2em;
+}
+.content ul li .title a{
+   text-decoration: none;
+   color: #fff;
+
+ }
