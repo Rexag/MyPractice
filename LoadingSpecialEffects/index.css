@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    background-color: #333;
+}
+.demoItem{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 150px auto;
+    border: 1px solid rgba(255, 255,255, 0.5);
+    display: flex;
+    /* 弹性盒子元素将向行中间位置对齐。该行的子元素将相互对齐并在行中居中对齐，同时第一个元素与行的主起始位置的边距等同与最后一个元素与行的主结束位置的边距（如果剩余空间是负数，则保持两端相等长度的溢出）。  */
+    justify-content: center;
+    /* 弹性盒子元素在该行的侧轴（纵轴）上居中放置。（如果该行的尺寸小于弹性盒子元素的尺寸，则会向两个方向溢出相同的长度）。  */
+    align-items:center;
+}
+.animation1 .shape{
+    display: inline-block;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+}
+.animation1 .shape-1{
+    background: #1875e5;
+    animation: AnimationShape1 1.5s ease infinite;
+}
+.animation1 .shape-2{
+    background: #c5523f;
+    animation: AnimationShape1 1.5s ease infinite 0.5s;  
+}
+.animation1 .shape-3{
+    background: #499455;
+    animation: AnimationShape1 1.5s ease infinite 0.8s
+}
+.animation1 .shape-4{
+    background: #f2b736;
+    animation: AnimationShape1 1.5s ease infinite 1s;
+}
+@keyframes AnimationShape1{
+    0%{
+        /* 指定对象的2D scale（2D缩放）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认取第一个参数的值  */
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity:1;
+    }
+    100%{
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+}
+
+/* animation2 */
+.animation2 .con{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.animation2 .shape{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    top: 40%;
+}
+.animation2 .shape-1{
+    background: #1875e5;
+    animation: AnimationShape2 1s ease infinite;
+}
+.animation2 .shape-2{
+    background: #c5523f;
+    left: 10px;
+}
+.animation2 .shape-3{
+    left: 20px;
+    background: #499455;
+}
+.animation2 .shape-4{
+    background: #f2b736;
+    left: 30px;
+    animation: AnimationShape3 1s ease infinite;
+}
+@keyframes AnimationShape2{
+    0%{
+        left: -15px;
+        top: 5px;
+    }
+    25%{
+        left: 0;
+        top: 40%;
+    }
+    50%{
+        left: 0;
+        top: 40%;
+    }
+    75%{
+        left: 0;
+        top: 40%;
+    }
+    100%{
+        left: -15px;
+        top: 5px;
+    }
+}
+@keyframes AnimationShape3{
+    0%{
+        left: 30px;
+        top: 40%;
+    }
+    25%{
+        left: 30px;
+        top: 40%;
+    }
+    50%{
+        left: 45px;
+        top: 5px;
+    }
+    75%{
+        left: 30px;
+        top: 40%;
+    }
+    100%{
+        left: 30px;
+        top: 40%;
+    }
+}
